@@ -1,0 +1,117 @@
+body
+	margin: 0
+	padding: 0
+
+.navPosition
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	width: 100%
+	position: fixed
+	background-color: inherit
+	align-items: center
+	z-index: 1
+
+	#mobileNavBurger
+		height: 50px
+		width: 50px
+		cursor: pointer
+		align-items: center
+		margin: 0 0 0 20px
+		display: flex
+
+		span,
+		span:before,
+		span:after
+			content: ""
+			display: block
+			background-color: black
+			height: 3px
+			width: 40px
+			position: relative
+			transition: all 0.3s ease-in-out
+
+		span:before
+			top: 15px
+
+		span:after
+			top: -18px
+
+		&.isOpen span
+			background: transparent
+
+		&.isOpen span:before,
+		&.isOpen span:after
+			transform-origin: center
+			transform: rotate(45deg)
+			top: 0
+
+		&.isOpen span:after
+			transform: rotate(-45deg)
+			top: -3px
+
+	h2
+		margin: 30px 30px
+		color: black
+
+	.desktopNav
+		display: none
+
+	.mediaLinks
+		visibility: hidden
+
+#mobileNav
+	margin: 0
+	padding: 87px 0 0 0
+	height: 100vh
+	width: 80%
+	background: #1f1f1f
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	transform: translateX(-100%)
+	transition: ease-in-out 0.3s
+
+	ul
+		margin: 0
+		padding: 0
+
+		li
+			list-style: none
+
+			a
+				text-decoration: none
+				color: white
+				padding: 30px 30px
+				display: block
+
+#mobileNav.isOpen
+	display: block
+	transform: translateX(0)
+
+@media (min-width: 775px)
+	.navPosition
+
+		#mobileNavBurger
+			display: none
+
+		.desktopNav
+			display: block
+
+			ul
+				margin: 0
+				padding: 0
+
+				li
+					list-style: none
+					text-align: center
+					display: inline-block
+
+					a
+						text-decoration: none
+						color: black
+						padding: 30px 30px
+
+
+		.mediaLinks
+			visibility: visible
