@@ -2,7 +2,20 @@
   "name": "wordpress",
   "version": "1.0.0",
   "description": "Wordpress template",
-  "main": "index.html",
+  "main": "functions.js",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-cli": "^1.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,19 +28,5 @@
   "bugs": {
     "url": "https://github.com/jneeb/WordpressTemplate/issues"
   },
-  "homepage": "https://github.com/jneeb/WordpressTemplate#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cli": "^1.2.2",
-    "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cli": "^1.2.2",
-    "gulp-sass": "^3.1.0"
-  }
+  "homepage": "https://github.com/jneeb/WordpressTemplate#readme"
 }
