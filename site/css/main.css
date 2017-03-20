@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.desktopNav img {
+  display: none; }
+
+.desktopNav ul {
+  display: none; }
+
+.desktopNav .socialLinks {
+  display: none; }
+
+.mobileNav {
+  width: 100%;
+  height: 50px;
+  background: blue; }
+  .mobileNav img {
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 75px;
+    width: 75px; }
+  .mobileNav #mobileNavBurger {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 10px 0 0; }
+    .mobileNav #mobileNavBurger span,
+    .mobileNav #mobileNavBurger span:before,
+    .mobileNav #mobileNavBurger span:after {
+      content: "";
+      display: block;
+      background-color: black;
+      height: 3px;
+      width: 30px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .mobileNav #mobileNavBurger span:before {
+      top: 10px; }
+    .mobileNav #mobileNavBurger span:after {
+      top: -13px; }
+    .mobileNav #mobileNavBurger.isOpen span {
+      background: transparent; }
+    .mobileNav #mobileNavBurger.isOpen span:before,
+    .mobileNav #mobileNavBurger.isOpen span:after {
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0; }
+    .mobileNav #mobileNavBurger.isOpen span:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: -3px; }
+  .mobileNav ul {
+    height: 100%; }
+    .mobileNav ul li a {
+      color: black; }
