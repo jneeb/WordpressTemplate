@@ -1,3 +1,6 @@
+html
+	height: 100%
+
 body
 	margin: 0
 	padding: 0
@@ -15,15 +18,7 @@ ul
 
 
 .desktopNav
-
-	img
-		display: none
-
-	ul
-		display: none
-
-	.socialLinks
-		display: none
+	display: none
 
 .mobileNav
 	width: 100%
@@ -78,10 +73,71 @@ ul
 			transform: rotate(-45deg)
 			top: -3px
 
-	ul
+	#mobileNavSlider
+		position: fixed
 		height: 100%
+		width: 80%
+		background: #262626
+		filter: opacity(0.8)
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		transition: all 0.5s ease
+		transform: translateX(-100%)
 
-		li
+		ul
+			padding: 50px 0 0 20px
+
+			li
+
+				a
+					display: block
+					padding: 10px 0
+					color: white
+
+		.mobileSocialLinks
+			padding: 0 0 20px 20px
 
 			a
-				color: black
+				border: 3px solid white
+				font-size: 20px
+				padding: 5px 10px
+				color: white
+
+				i
+					text-align: center
+					width: 20px
+
+#mobileNavSlider.isOpen
+	transform: translateX(0)
+
+@media (min-width: 775px)
+	.mobileNav
+		display: none
+
+	.desktopNav
+		display: block
+
+		img
+			height: 100px
+			width: 100px
+
+		ul
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			display: block
+
+			li
+				display: inline-block
+				padding: 15px 30px
+
+				a
+					display: block
+					// padding: 15px 30px
+
+		.socialLinks
+			position: absolute
+			right: 0
+			top: 0
