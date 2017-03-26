@@ -2,6 +2,7 @@ html
 	height: 100%
 
 body
+	height: 100%
 	margin: 0
 	padding: 0
 	background: #f1f1f1
@@ -23,7 +24,8 @@ ul
 .mobileNav
 	width: 100%
 	height: 50px
-	background: blue
+	background: white
+	position: absolute
 
 	img
 		left: 50%
@@ -117,8 +119,10 @@ ul
 
 	.desktopNav
 		display: block
+		// align-items: center
 
 		img
+			position: absolute
 			height: 100px
 			width: 100px
 
@@ -132,6 +136,7 @@ ul
 			li
 				display: inline-block
 				padding: 15px 30px
+				color: white
 
 				a
 					display: block
@@ -141,3 +146,13 @@ ul
 			position: absolute
 			right: 0
 			top: 0
+			padding: 15px 0 20px 20px
+
+			a
+				font-size: 20px
+				padding: 5px 10px
+				color: white
+
+				i
+					text-align: center
+					width: 20px
