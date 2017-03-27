@@ -2,7 +2,7 @@
 	background: url(/img/shop.jpg), rgba(36, 36, 36, 0.2)
 	background-size: cover
 	background-repeat: no-repeat
-	background-attachment: fixed
+	background-attachment: scroll
 	height: 400px
 	width: 100%
 
@@ -14,12 +14,13 @@
 		height: 400px
 		width: 100%
 		color: white
+		text-align: center
 
 .parallaxTwo
 	background: url(/img/espressoMachine.jpg), rgba(36, 36, 36, 0.2)
 	background-size: cover
 	background-repeat: no-repeat
-	background-attachment: fixed
+	background-attachment: scroll
 	height: 400px
 	width: 100%
 
@@ -31,3 +32,11 @@
 		height: 400px
 		width: 100%
 		color: white
+		text-align: center
+
+@media (min-width: 775px)
+	.parallax
+		background-attachment: fixed
+
+	.parallaxTwo
+		background-attachment: fixed
