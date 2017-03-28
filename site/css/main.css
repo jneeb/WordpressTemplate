@@ -4,8 +4,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  background: #f1f1f1; }
+  padding: 0; }
 
 a {
   text-decoration: none; }
@@ -16,6 +15,21 @@ li {
 ul {
   margin: 0;
   padding: 0; }
+
+p {
+  margin: 0; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+h3 {
+  margin: 0; }
+
+h4 {
+  margin: 0; }
 
 .desktopNav {
   display: none; }
@@ -188,29 +202,113 @@ ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin: 50px 0; }
   .homeFlex span {
-    background: pink;
-    min-height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f1f1f1;
+    height: 200px;
     width: 80%;
-    margin: 50px 50px; }
+    margin: 20px 20px;
+    padding: 10px 10px;
+    box-sizing: border-box; }
   .homeFlex img {
     height: 200px;
     width: 80%;
-    margin: 50px 0; }
+    margin: 20px 20px; }
+
+@media (min-width: 400px) {
+  .homeFlex span {
+    height: 225px; }
+  .homeFlex img {
+    height: 225px; } }
+
+@media (min-width: 475px) {
+  .homeFlex span {
+    height: 250px; }
+  .homeFlex img {
+    height: 250px; } }
+
+@media (min-width: 550px) {
+  .homeFlex span {
+    height: 275px; }
+  .homeFlex img {
+    height: 275px; } }
+
+@media (min-width: 620px) {
+  .homeFlex span {
+    height: 300px; }
+  .homeFlex img {
+    height: 300px; } }
+
+@media (min-width: 700px) {
+  .homeFlex span {
+    height: 325px; }
+  .homeFlex img {
+    height: 325px; } }
 
 @media (min-width: 775px) {
   .homeFlex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row; }
+    .homeFlex span {
+      width: 40%;
+      height: 200px; }
+    .homeFlex img {
+      width: 40%;
+      height: 200px; }
+  .homeFlex.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
+
+@media (min-width: 950px) {
+  .homeFlex span {
+    height: 250px; }
+  .homeFlex img {
+    height: 250px; } }
+
+@media (min-width: 1100px) {
+  .homeFlex span {
+    height: 300px; }
+  .homeFlex img {
+    height: 300px; } }
+
+@media (min-width: 1250px) {
+  .homeFlex span {
+    height: 350px; }
+  .homeFlex img {
+    height: 350px; } }
+
+@media (min-width: 1500px) {
+  .homeFlex span {
+    width: 600px;
+    height: 400px; }
+  .homeFlex img {
+    width: 600px;
+    height: 400px; } }
 
 .parallax {
-  background: url(/img/shop.jpg), rgba(36, 36, 36, 0.2);
-  background-size: cover;
+  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/shop.jpg);
+  background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/shop.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-size: cover;
   height: 400px;
   width: 100%; }
   .parallax .flex {
@@ -232,31 +330,13 @@ ul {
     color: white;
     text-align: center; }
 
-.parallaxTwo {
-  background: url(/img/espressoMachine.jpg), rgba(36, 36, 36, 0.2);
-  background-size: cover;
+.parallax.second {
+  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/espressoMachine.jpg);
+  background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/espressoMachine.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-size: cover;
   height: 400px;
   width: 100%; }
-  .parallaxTwo .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 400px;
-    width: 100%;
-    color: white;
-    text-align: center; }
 
 @media (min-width: 775px) {
   .parallax {

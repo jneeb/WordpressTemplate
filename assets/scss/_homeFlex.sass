@@ -3,18 +3,111 @@
 	justify-content: center
 	align-items: center
 	flex-direction: column
+	margin: 50px 0
 
 	span
-		background: pink
-		min-height: 200px
+		display: flex
+		flex-direction: column
+		text-align: center
+		justify-content: center
+		align-items: center
+		background: #f1f1f1
+		height: 200px
 		width: 80%
-		margin: 50px 50px
+		margin: 20px 20px
+		padding: 10px 10px
+		box-sizing: border-box
 
 	img
 		height: 200px
 		width: 80%
-		margin: 50px 0
+		margin: 20px 20px
+
+@media (min-width: 400px)
+	.homeFlex
+		span
+			height: 225px
+
+		img
+			height: 225px
+
+@media (min-width: 475px)
+	.homeFlex
+		span
+			height: 250px
+
+		img
+			height: 250px
+
+@media (min-width: 550px)
+	.homeFlex
+		span
+			height: 275px
+
+		img
+			height: 275px
+
+@media (min-width: 620px)
+	.homeFlex
+		span
+			height: 300px
+
+		img
+			height: 300px
+
+@media (min-width: 700px)
+	.homeFlex
+		span
+			height: 325px
+
+		img
+			height: 325px
 
 @media (min-width: 775px)
 	.homeFlex
 		flex-direction: row
+
+		span
+			width: 40%
+			height: 200px
+
+		img
+			width: 40%
+			height: 200px
+
+	.homeFlex.reverse
+		flex-direction: row-reverse
+
+@media (min-width: 950px)
+	.homeFlex
+		span
+			height: 250px
+
+		img
+			height: 250px
+
+@media (min-width: 1100px)
+	.homeFlex
+		span
+			height: 300px
+
+		img
+			height: 300px
+
+@media (min-width: 1250px)
+	.homeFlex
+		span
+			height: 350px
+
+		img
+			height: 350px
+
+@media (min-width: 1500px)
+	.homeFlex
+		span
+			width: 600px
+			height: 400px
+
+		img
+			width: 600px
+			height: 400px
