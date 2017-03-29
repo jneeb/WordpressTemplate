@@ -150,18 +150,17 @@ h4 {
               transform: translateX(-50%);
       display: block; }
       .desktopNav ul li {
-        display: inline-block;
-        padding: 15px 30px;
-        color: white;
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-        cursor: pointer; }
+        display: inline-block; }
         .desktopNav ul li a {
-          display: block;
+          padding: 15px 30px;
+          color: white;
           -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          cursor: pointer;
+          display: block;
           transition: 0.3s ease-in-out; }
-        .desktopNav ul li:hover {
-          color: blue; }
+          .desktopNav ul li a:hover {
+            color: blue; }
     .desktopNav .socialLinks {
       position: absolute;
       right: 0;
