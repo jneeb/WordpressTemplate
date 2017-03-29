@@ -139,6 +139,7 @@ h4
 			position: absolute
 			height: 100px
 			width: 100px
+			cursor: pointer
 
 		ul
 			position: absolute
@@ -151,22 +152,35 @@ h4
 				display: inline-block
 				padding: 15px 30px
 				color: white
+				transition: 0.3s ease-in-out
+				cursor: pointer
 
 				a
 					display: block
-					// padding: 15px 30px
+					transition: 0.3s ease-in-out
+
+				&:hover
+					color: blue
 
 		.socialLinks
 			position: absolute
 			right: 0
 			top: 0
 			padding: 15px 0 20px 20px
+			cursor: pointer
 
 			a
 				font-size: 20px
 				padding: 5px 10px
 				color: white
+				transition: 0.3s ease-in-out
+
+				&:hover
+					color: blue
 
 				i
 					text-align: center
 					width: 20px
+
+.desktopNav ul li.activeMenu
+	color: blue

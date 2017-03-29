@@ -140,7 +140,8 @@ h4 {
     .desktopNav img {
       position: absolute;
       height: 100px;
-      width: 100px; }
+      width: 100px;
+      cursor: pointer; }
     .desktopNav ul {
       position: absolute;
       top: 0;
@@ -151,21 +152,36 @@ h4 {
       .desktopNav ul li {
         display: inline-block;
         padding: 15px 30px;
-        color: white; }
+        color: white;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        cursor: pointer; }
         .desktopNav ul li a {
-          display: block; }
+          display: block;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+        .desktopNav ul li:hover {
+          color: blue; }
     .desktopNav .socialLinks {
       position: absolute;
       right: 0;
       top: 0;
-      padding: 15px 0 20px 20px; }
+      padding: 15px 0 20px 20px;
+      cursor: pointer; }
       .desktopNav .socialLinks a {
         font-size: 20px;
         padding: 5px 10px;
-        color: white; }
+        color: white;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+        .desktopNav .socialLinks a:hover {
+          color: blue; }
         .desktopNav .socialLinks a i {
           text-align: center;
           width: 20px; } }
+
+.desktopNav ul li.activeMenu {
+  color: blue; }
 
 #home {
   height: 100vh;
