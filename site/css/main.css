@@ -31,7 +31,7 @@ h3 {
 h4 {
   margin: 0; }
 
-.desktopNav {
+#desktopNav {
   display: none; }
 
 .mobileNav {
@@ -135,23 +135,25 @@ h4 {
 @media (min-width: 775px) {
   .mobileNav {
     display: none; }
-  .desktopNav {
+  #desktopNav {
+    position: fixed;
+    width: 100%;
     display: block; }
-    .desktopNav img {
+    #desktopNav img {
       position: absolute;
       height: 100px;
       width: 100px;
       cursor: pointer; }
-    .desktopNav ul {
+    #desktopNav ul {
       position: absolute;
       top: 0;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       display: block; }
-      .desktopNav ul li {
+      #desktopNav ul li {
         display: inline-block; }
-        .desktopNav ul li a {
+        #desktopNav ul li a {
           padding: 15px 30px;
           color: white;
           -webkit-transition: 0.3s ease-in-out;
@@ -159,28 +161,30 @@ h4 {
           cursor: pointer;
           display: block;
           transition: 0.3s ease-in-out; }
-          .desktopNav ul li a:hover {
+          #desktopNav ul li a:hover {
             color: blue; }
-    .desktopNav .socialLinks {
+    #desktopNav .socialLinks {
       position: absolute;
       right: 0;
       top: 0;
       padding: 15px 0 20px 20px;
       cursor: pointer; }
-      .desktopNav .socialLinks a {
+      #desktopNav .socialLinks a {
         font-size: 20px;
         padding: 5px 10px;
         color: white;
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
-        .desktopNav .socialLinks a:hover {
+        #desktopNav .socialLinks a:hover {
           color: blue; }
-        .desktopNav .socialLinks a i {
+        #desktopNav .socialLinks a i {
           text-align: center;
-          width: 20px; } }
-
-.desktopNav ul li.activeMenu {
-  color: blue; }
+          width: 20px; }
+  #desktopNav ul li.activeMenu {
+    color: blue; }
+  #desktopNav.onScroll {
+    background: white;
+    color: black; } }
 
 #home {
   height: 100vh;
@@ -374,6 +378,31 @@ h4 {
   color: white; }
   .siteLinks p {
     margin: 0; }
+
+.menuLayout {
+  padding: 5px 5px; }
+  .menuLayout ul .menuItem {
+    padding: 15px 20px;
+    max-width: 550px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0; }
+    .menuLayout ul .menuItem .menuDescription {
+      font-size: 12px; }
+    .menuLayout ul .menuItem .leaders {
+      background: -webkit-radial-gradient(#262626 1px, white 0px);
+      background: radial-gradient(#262626 1px, white 0px);
+      background-size: 8px 8px;
+      background-repeat: repeat-x;
+      background-position: left bottom; }
+      .menuLayout ul .menuItem .leaders span {
+        height: 18px;
+        background: white; }
+      .menuLayout ul .menuItem .leaders span:nth-child(2) {
+        float: right;
+        padding: 0 0 0 5px; }
+
+.menuItem.highlight {
+  border: 2px solid #262626; }
 
 .siteFooter {
   height: 200px;

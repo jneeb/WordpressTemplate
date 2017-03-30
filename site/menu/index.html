@@ -10,8 +10,8 @@
 </head>
 <body>
 	<header>
-		<div class="desktopNav">
-			<img src="/img/jLogoWhite2.png" alt="Site Logo">
+		<div id="desktopNav">
+			<a href="/"><img src="/img/jLogoWhite2.png" alt="Site Logo"></a>
 			<ul>
 				<li><a href="/">HOME</a></li>
 				<li class="activeMenu"><a href="/menu/index.html">MENU</a></li>
@@ -46,9 +46,59 @@
 			</div>
 		</div>
 	</header>
+	<div style="height:500px"></div>
+
+	<section class="menuLayout">
+		<ul class="menuSection">
+			<li class="menuItem">
+				<div class="leaders">
+					<span>Title</span>
+					<span>$19.95</span>
+				</div>
+				<div class="menuDescription">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+			</li>
+			<li class="menuItem highlight">
+				<div class="leaders">
+					<span>Title</span>
+					<span>$19.95</span>
+				</div>
+				<div class="menuDescription">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="siteLinks">
+		<div class="address">
+			<h4>Location</h4>
+			<p>1234 Brock Ave, Toronto</p>
+		</div>
+		<div class="hours">
+			<h4>Hours</h4>
+			<p>Mon-Thurs</p>
+			<p>9:00am - 8:00pm</p>
+			<p>Fri-Sun</p>
+			<p>9:00am - 5:00pm</p>
+		</div>
+		<div class="footerLinks">
+			<h4>Social</h4>
+			<p>Facebook</p>
+			<p>Twitter</p>
+			<p>Instagram</p>
+		</div>
+	</section>
 
 </body>
-<footer>
-
+<footer class="siteFooter">
+	<p>
+		Back to top
+	</p>
+	<p>
+		&copy;2017 Handcrafted by <a href="http://justinneeb.com"><u>Justin Neeb</u></a>
+	</p>
 </footer>
+<script src="/functions/burger.js"></script>
 </html>
