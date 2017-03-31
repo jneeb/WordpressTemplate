@@ -181,10 +181,7 @@ h4 {
           text-align: center;
           width: 20px; }
   #desktopNav ul li.activeMenu {
-    color: blue; }
-  #desktopNav.onScroll {
-    background: white;
-    color: black; } }
+    color: blue; } }
 
 #home {
   height: 100vh;
@@ -380,29 +377,65 @@ h4 {
     margin: 0; }
 
 .menuLayout {
-  padding: 5px 5px; }
-  .menuLayout ul .menuItem {
-    padding: 15px 20px;
+  padding: 85px 5px 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .menuLayout .menuSection {
+    width: 90%;
     max-width: 550px;
-    box-sizing: border-box;
-    margin: 0 0 20px 0; }
-    .menuLayout ul .menuItem .menuDescription {
-      font-size: 12px; }
-    .menuLayout ul .menuItem .leaders {
-      background: -webkit-radial-gradient(#262626 1px, white 0px);
-      background: radial-gradient(#262626 1px, white 0px);
-      background-size: 8px 8px;
-      background-repeat: repeat-x;
-      background-position: left bottom; }
-      .menuLayout ul .menuItem .leaders span {
-        height: 18px;
-        background: white; }
-      .menuLayout ul .menuItem .leaders span:nth-child(2) {
-        float: right;
-        padding: 0 0 0 5px; }
+    padding: 0 10px; }
+    .menuLayout .menuSection h4 {
+      padding-left: 20px; }
+    .menuLayout .menuSection .menuItem {
+      padding: 15px 20px;
+      max-width: 550px;
+      box-sizing: border-box;
+      margin: 0 0 20px 0; }
+      .menuLayout .menuSection .menuItem .menuDescription {
+        font-size: 12px; }
+      .menuLayout .menuSection .menuItem .leaders {
+        background: -webkit-radial-gradient(#262626 1px, white 0px);
+        background: radial-gradient(#262626 1px, white 0px);
+        background-size: 8px 8px;
+        background-repeat: repeat-x;
+        background-position: left bottom; }
+        .menuLayout .menuSection .menuItem .leaders span {
+          height: 18px;
+          background: white; }
+        .menuLayout .menuSection .menuItem .leaders span:nth-child(2) {
+          float: right;
+          padding: 0 0 0 5px; }
 
 .menuItem.highlight {
   border: 2px solid #262626; }
+
+@media (min-width: 800px) {
+  .menuLayout {
+    padding: 85px 50px 5px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; } }
 
 .siteFooter {
   height: 200px;

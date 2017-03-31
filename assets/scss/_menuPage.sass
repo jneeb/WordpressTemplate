@@ -1,10 +1,17 @@
 .menuLayout
-	padding: 5px 5px
+	padding: 85px 5px 5px 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
 
 	.menuSection
-		// max-width: 600px
+		width: 90%
+		max-width: 550px
+		padding: 0 10px
 
-	ul
+		h4
+			padding-left: 20px
 
 		.menuItem
 			padding: 15px 20px
@@ -13,7 +20,6 @@
 			margin: 0 0 20px 0
 
 			.menuDescription
-				// padding: 10px 0 0 0
 				font-size: 12px
 
 			.leaders
@@ -32,3 +38,11 @@
 
 .menuItem.highlight
 	border: 2px solid #262626
+
+@media (min-width: 800px)
+	.menuLayout
+		padding: 85px 50px 5px 50px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-grow: 1
