@@ -357,7 +357,7 @@ h4 {
 @media (min-width: 775px) {
   .parallax {
     background-attachment: fixed; }
-  .parallaxTwo {
+  .parallax.second {
     background-attachment: fixed; } }
 
 .siteLinks {
@@ -436,6 +436,55 @@ h4 {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; } }
+
+.contactTitle {
+  padding-top: 80px;
+  text-align: center; }
+
+.contactFlex {
+  padding: 50px 40px 50px 40px; }
+  .contactFlex .contactForm form {
+    margin: 0;
+    box-sizing: border-box; }
+    .contactFlex .contactForm form input {
+      box-sizing: border-box;
+      width: 100%;
+      line-height: 16px;
+      max-width: 700px;
+      border: 3px solid rgba(0, 0, 0, 0.15);
+      margin: 0 0 10px 0;
+      padding: 10px;
+      border-radius: 2px; }
+      .contactFlex .contactForm form input:focus {
+        outline: none;
+        border: 3px solid #262626; }
+    .contactFlex .contactForm form textarea {
+      box-sizing: border-box;
+      width: 100%;
+      resize: none;
+      line-height: 16px;
+      max-width: 700px;
+      border: 3px solid rgba(0, 0, 0, 0.15);
+      margin: 0 0 10px 0;
+      padding: 10px;
+      border-radius: 2px; }
+      .contactFlex .contactForm form textarea:focus {
+        outline: none;
+        border: 3px solid #262626; }
+    .contactFlex .contactForm form button {
+      cursor: pointer;
+      background-color: inherit;
+      box-sizing: border-box;
+      border: 3px solid rgba(0, 0, 0, 0.15);
+      width: 100px;
+      padding: 10px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      float: right;
+      border-radius: 2px; }
+      .contactFlex .contactForm form button:hover {
+        background: #262626;
+        color: white; }
 
 .siteFooter {
   height: 200px;
