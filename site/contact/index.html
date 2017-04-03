@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<div id="desktopNav">
+		<div id="desktopNav" class="onScroll">
 			<a href="/"><img src="/img/jLogoWhite2.png" alt="Site Logo"></a>
 			<ul>
 				<li><a href="/">HOME</a></li>
@@ -51,15 +51,21 @@
 
 	<section class="contactFlex">
 		<div class="location">
-			<h4>Address</h4>
-			<p>1234 Brock Ave, Toronto Ontario</p>
-			<h4>Hours</h4>
-			<p>Mon - Thurs</p>
-			<p>9:00am - 8:00pm</p>
-			<p>Fri - Sun</p>
-			<p>9:00am - 5:00pm</p>
-			<h4>Number</h4>
-			<p>(555) 123 1234</p>
+			<div class="contactLocation">
+				<h4>Location</h4>
+				<p>1234 Brock Ave, Toronto Ontario</p>
+			</div>
+			<div class="contactHours">
+				<h4>Hours</h4>
+				<p>Mon - Thurs</p>
+				<p>9:00am - 8:00pm</p>
+				<p>Fri - Sun</p>
+				<p>9:00am - 5:00pm</p>
+			</div>
+			<div class="contactNumber">
+				<h4>Number</h4>
+				<p>(555) 123 1234</p>
+			</div>
 		</div>
 		<div class="contactForm">
 			<form>
@@ -95,12 +101,12 @@
 
 </body>
 <footer class="siteFooter">
-	<p>
-		Back to top
-	</p>
+	<a href="/" class="backToTop">Back To Top</a>
 	<p>
 		&copy;2017 Handcrafted by <a href="http://justinneeb.com"><u>Justin Neeb</u></a>
 	</p>
 </footer>
 <script src="/functions/burger.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOHi-D41sqHHFyKormXrD3gmeM8vIbXs&callback=initMap"></script>
+<script src="/functions/mapAPI.js"></script>
 </html>

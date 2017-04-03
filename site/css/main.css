@@ -48,8 +48,9 @@ h6 {
   display: none; }
 
 #desktopNav.onScroll {
-  background: white;
-  color: black; }
+  background: black;
+  -webkit-filter: invert(100);
+          filter: invert(100); }
 
 .mobileNav {
   font-family: "Montserrat", sans-serif;
@@ -153,7 +154,7 @@ h6 {
   .mobileNav {
     display: none; }
   #desktopNav ul .activeMenu a {
-    color: blue; }
+    border-bottom: 2px solid white; }
   #desktopNav {
     font-family: "Montserrat", sans-serif;
     position: fixed;
@@ -175,15 +176,12 @@ h6 {
       #desktopNav ul li {
         display: inline-block; }
         #desktopNav ul li a {
-          padding: 15px 30px;
+          margin: 15px 30px;
           color: white;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
           cursor: pointer;
-          display: block;
-          transition: 0.3s ease-in-out; }
+          display: block; }
           #desktopNav ul li a:hover {
-            color: blue; }
+            border-bottom: 2px solid white; }
     #desktopNav .socialLinks {
       position: absolute;
       right: 0;
@@ -402,6 +400,12 @@ h6 {
   color: white; }
   .siteLinks p {
     margin: 0; }
+  .siteLinks .address {
+    padding: 0 10px; }
+  .siteLinks .hours {
+    padding: 0 10px; }
+  .siteLinks .footerLinks {
+    padding: 0 10px; }
 
 .menuPageHeader {
   padding-top: 80px; }
@@ -417,7 +421,9 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    margin: 25px 0; }
+    margin: 25px 0;
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px); }
     .menuPageHeader .menuPages h3 {
       cursor: pointer;
       border-bottom: 2px solid #262626;
@@ -572,12 +578,26 @@ h3.active {
 .contactFlex {
   padding: 50px 40px 50px 40px; }
   .contactFlex .location {
-    padding: 0 0 50px 0; }
+    padding: 0 0 10px 0; }
+    .contactFlex .location .contactLocation {
+      margin-bottom: 20px; }
+      .contactFlex .location .contactLocation h4 {
+        margin-bottom: 10px; }
+    .contactFlex .location .contactHours {
+      margin-bottom: 20px; }
+      .contactFlex .location .contactHours h4 {
+        margin-bottom: 10px; }
+    .contactFlex .location .contactNumber {
+      margin-bottom: 20px; }
+      .contactFlex .location .contactNumber h4 {
+        margin-bottom: 10px; }
   .contactFlex .contactForm form {
+    max-width: 700px;
     margin: 0;
     box-sizing: border-box; }
     .contactFlex .contactForm form input {
       box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
       width: 100%;
       line-height: 16px;
       max-width: 700px;
@@ -589,6 +609,7 @@ h3.active {
         outline: none;
         border: 3px solid #262626; }
     .contactFlex .contactForm form textarea {
+      font-family: "Montserrat", sans-serif;
       box-sizing: border-box;
       width: 100%;
       resize: none;
@@ -602,6 +623,7 @@ h3.active {
         outline: none;
         border: 3px solid #262626; }
     .contactFlex .contactForm form button {
+      font-family: "Montserrat", sans-serif;
       cursor: pointer;
       background-color: inherit;
       box-sizing: border-box;
@@ -616,8 +638,27 @@ h3.active {
         background: #262626;
         color: white; }
 
+#map {
+  z-index: -1;
+  height: 400px;
+  width: 100%; }
+
+@media (min-width: 775px) {
+  .contactFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contactFlex .location {
+      height: 346px;
+      margin-right: 50px; } }
+
 .siteFooter {
-  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,10 +672,17 @@ h3.active {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 50px 0; }
+  .siteFooter .backToTop {
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px; }
   .siteFooter p {
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-size: 14px; }
     .siteFooter p a {
       color: white;
       border: bottom solid 2px white; }

@@ -6,20 +6,38 @@
 	padding: 50px 40px 50px 40px
 
 	.location
-		padding: 0 0 50px 0
+		padding: 0 0 10px 0
 
-		h4
+		.contactLocation
+			margin-bottom: 20px
 
-		p
+			h4
+				margin-bottom: 10px
+
+		.contactHours
+			margin-bottom: 20px
+
+			h4
+				margin-bottom: 10px
+
+
+		.contactNumber
+			margin-bottom: 20px
+
+			h4
+				margin-bottom: 10px
+
 
 	.contactForm
 
 		form
+			max-width: 700px
 			margin: 0
 			box-sizing: border-box
 
 			input
 				box-sizing: border-box
+				font-family: $headerFont
 				width: 100%
 				line-height: 16px
 				max-width: 700px
@@ -33,6 +51,7 @@
 					border: 3px solid #262626
 
 			textarea
+				font-family: $headerFont
 				box-sizing: border-box
 				width: 100%
 				resize: none
@@ -48,6 +67,7 @@
 					border: 3px solid #262626
 
 			button
+				font-family: $headerFont
 				cursor: pointer
 				background-color: inherit
 				box-sizing: border-box
@@ -61,3 +81,18 @@
 				&:hover
 					background: #262626
 					color: white
+
+#map
+	z-index: -1
+	height: 400px
+	width: 100%
+
+@media (min-width: 775px)
+	.contactFlex
+		display: flex
+		justify-content: center
+		align-items: center
+
+		.location
+			height: 346px
+			margin-right: 50px

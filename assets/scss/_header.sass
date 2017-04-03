@@ -2,8 +2,10 @@
 	display: none
 
 #desktopNav.onScroll
-	background: white
-	color: black
+	background: black
+	filter: invert(100)
+
+
 
 .mobileNav
 	font-family: $headerFont
@@ -102,7 +104,7 @@
 		display: none
 
 	#desktopNav ul .activeMenu a
-		color: blue
+		border-bottom: 2px solid white
 
 	#desktopNav
 		font-family: $headerFont
@@ -129,15 +131,13 @@
 
 
 				a
-					padding: 15px 30px
+					margin: 15px 30px
 					color: white
-					transition: 0.3s ease-in-out
 					cursor: pointer
 					display: block
-					transition: 0.3s ease-in-out
 
 					&:hover
-						color: blue
+						border-bottom: 2px solid white
 
 		.socialLinks
 			position: absolute
