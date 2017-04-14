@@ -7,7 +7,8 @@ body {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 li {
   list-style: none; }
@@ -56,15 +57,26 @@ h6 {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 50px;
-  background: white;
+  background: rgba(255, 255, 255, 0.85);
   position: fixed; }
-  .mobileNav img {
+  .mobileNav .mobileLogo {
     left: 50%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    height: 75px;
-    width: 75px; }
+    font-family: "Damion", cursive;
+    font-size: 25px;
+    color: black;
+    height: 50px; }
   .mobileNav #mobileNavBurger {
     height: 50px;
     width: 50px;
@@ -111,6 +123,7 @@ h6 {
       top: -3px; }
   .mobileNav #mobileNavSlider {
     position: fixed;
+    z-index: 2;
     height: 100%;
     width: 80%;
     background: #262626;
@@ -161,14 +174,20 @@ h6 {
     width: 100%;
     height: 50px;
     display: block; }
-    #desktopNav img {
+    #desktopNav .logo {
       position: absolute;
-      height: 100px;
-      width: 100px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: white;
+      font-family: "Damion", cursive;
+      font-size: 40px;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      padding-left: 20px; }
+      #desktopNav .logo:hover {
+        color: #dfa671; }
     #desktopNav ul {
       position: absolute;
-      top: 0;
+      top: 2.5px;
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
@@ -179,14 +198,16 @@ h6 {
           margin: 15px 30px;
           color: white;
           cursor: pointer;
-          display: block; }
+          display: block;
+          padding-bottom: 5px;
+          font-size: 13px; }
           #desktopNav ul li a:hover {
             border-bottom: 2px solid white; }
     #desktopNav .socialLinks {
       position: absolute;
       right: 0;
       top: 0;
-      padding: 15px 0 20px 20px;
+      padding: 15px 20px 20px 20px;
       cursor: pointer; }
       #desktopNav .socialLinks a {
         font-size: 20px;
@@ -195,17 +216,15 @@ h6 {
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
         #desktopNav .socialLinks a:hover {
-          color: blue; }
+          color: #dfa671; }
         #desktopNav .socialLinks a i {
           text-align: center;
-          width: 20px; }
-  #desktopNav ul li.activeMenu {
-    color: blue; } }
+          width: 20px; } }
 
-#home {
+#homeHero {
   height: 100vh;
-  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/homeImg.jpg);
-  background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/homeImg.jpg);
+  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), url(/img/shop.jpg);
+  background: linear-gradient(rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), url(/img/shop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -221,14 +240,14 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #home h1 {
+  #homeHero h1 {
     color: white;
     margin: 0;
-    font-size: 40px; }
-  #home h4 {
+    font-size: 60px; }
+  #homeHero h4 {
     color: white;
-    font-family: "Pacifico", cursive;
-    font-size: 25px; }
+    font-family: "Damion", cursive;
+    font-size: 30px; }
 
 .homeFlex {
   display: -webkit-box;
@@ -346,11 +365,11 @@ h6 {
     height: 400px; } }
 
 .parallax {
-  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/shop.jpg);
-  background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/shop.jpg);
+  background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/machineTwo.jpg);
+  background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/machineTwo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   width: 100%; }
   .parallax .flex {
     display: -webkit-box;
@@ -366,18 +385,23 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 400px;
+    height: 600px;
     width: 100%;
     color: white;
     text-align: center; }
+    .parallax .flex p {
+      font-family: "Damion", cursive;
+      font-size: 20px; }
+    .parallax .flex h2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 40px; }
 
 .parallax.second {
   background: -webkit-linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/espressoMachine.jpg);
   background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url(/img/espressoMachine.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-  width: 100%; }
+  background-size: cover; }
 
 @media (min-width: 775px) {
   .parallax {
@@ -394,18 +418,19 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white; }
-  .siteLinks p {
-    margin: 0; }
   .siteLinks .address {
     padding: 0 10px; }
+    .siteLinks .address p {
+      font-size: 14px; }
   .siteLinks .hours {
     padding: 0 10px; }
+    .siteLinks .hours p {
+      font-size: 14px; }
   .siteLinks .footerLinks {
     padding: 0 10px; }
+    .siteLinks .footerLinks p {
+      font-size: 14px; }
 
 .menuPageHeader {
   padding-top: 80px; }
@@ -422,8 +447,7 @@ h6 {
             justify-content: center;
     text-align: center;
     margin: 25px 0;
-    -webkit-transform: translateX(-14px);
-            transform: translateX(-14px); }
+    z-index: 2; }
     .menuPageHeader .menuPages h3 {
       cursor: pointer;
       border-bottom: 2px solid #262626;
@@ -432,8 +456,8 @@ h6 {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
       .menuPageHeader .menuPages h3:hover {
-        color: pink;
-        border-bottom: 2px solid pink; }
+        color: #dfa671;
+        border-bottom: 2px solid #dfa671; }
 
 .menuLayout {
   padding: 50px 20px; }
@@ -457,9 +481,10 @@ h6 {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .menuLayout #breakfastMenu .menuSection:nth-child(2), .menuLayout #lunchMenu .menuSection:nth-child(2), .menuLayout #dinnerMenu .menuSection:nth-child(2) {
+        padding-top: 30px; }
       .menuLayout #breakfastMenu .menuSection h4, .menuLayout #lunchMenu .menuSection h4, .menuLayout #dinnerMenu .menuSection h4 {
         margin-bottom: 10px;
-        padding-left: 20px;
         font-size: 12px; }
       .menuLayout #breakfastMenu .menuSection .menuItem, .menuLayout #lunchMenu .menuSection .menuItem, .menuLayout #dinnerMenu .menuSection .menuItem {
         font-size: 14px;
@@ -542,11 +567,14 @@ h6 {
           flex-direction: column; }
 
 h3.active {
-  color: pink;
-  border-bottom: 2px solid pink !important; }
+  color: #dfa671;
+  border-bottom: 2px solid #dfa671 !important; }
 
 @media (min-width: 800px) {
-  .menuLayout #breakfastMenu {
+  .menuPages {
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px); }
+  .menuLayout #breakfastMenu, .menuLayout #lunchMenu, .menuLayout #dinnerMenu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -554,22 +582,8 @@ h3.active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .menuLayout #lunchMenu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .menuLayout #dinnerMenu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+    .menuLayout #breakfastMenu .menuSection:nth-child(2), .menuLayout #lunchMenu .menuSection:nth-child(2), .menuLayout #dinnerMenu .menuSection:nth-child(2) {
+      padding-top: 0; } }
 
 .contactTitle {
   padding-top: 80px;
