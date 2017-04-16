@@ -285,6 +285,18 @@ h6 {
     margin: 20px 20px;
     padding: 10px 10px;
     box-sizing: border-box; }
+    .homeFlex span h2 {
+      margin-bottom: 10px; }
+    .homeFlex span a {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+      border-bottom: 2px solid black;
+      -webkit-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+      .homeFlex span a:hover {
+        color: #dfa671;
+        border-bottom: 2px solid #dfa671; }
   .homeFlex img {
     height: 200px;
     width: 80%;
