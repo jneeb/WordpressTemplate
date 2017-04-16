@@ -5,20 +5,15 @@
 	justify-content: center
 	color: white
 
-	.address
+	.address, .hours, .footerLinks
 		padding: 0 10px
 
 		p
 			font-size: 14px
 
-	.hours
-		padding: 0 10px
+@media (min-width: 800px)
+	.siteLinks
 
-		p
-			font-size: 14px
-
-	.footerLinks
-		padding: 0 10px
-
-		p
-			font-size: 14px
+		.address, .hours, .footerLinks
+			padding: 0 30px
+			transform: translateX(-33px)
