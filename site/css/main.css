@@ -566,7 +566,10 @@ h3.active {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .menuLayout #breakfastMenu .menuSection:nth-child(2), .menuLayout #lunchMenu .menuSection:nth-child(2), .menuLayout #dinnerMenu .menuSection:nth-child(2) {
       padding-top: 0; }
   .menuLayout .dinnerMenu .menuSection:nth-child(1) {
