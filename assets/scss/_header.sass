@@ -2,8 +2,8 @@
 	display: none
 
 #desktopNav.onScroll
-	background: black
-	filter: invert(100)
+	background: white
+	// filter: invert(100)
 
 .mobileNav
 	font-family: $headerFont
@@ -110,6 +110,9 @@
 	#desktopNav ul .activeMenu a
 		border-bottom: 2px solid white
 
+	#desktopNav ul .activeMenu a.onScroll
+		border-bottom: 2px solid black
+
 	#desktopNav
 		font-family: $headerFont
 		position: fixed
@@ -125,6 +128,12 @@
 			font-size: 40px
 			transition: all 0.3s ease-in-out
 			padding-left: 20px
+
+			&:hover
+				color: $gold
+
+		.logo.onScroll
+			color: black
 
 			&:hover
 				color: $gold
@@ -152,6 +161,12 @@
 					&:hover
 						border-bottom: 2px solid white
 
+				a.onScroll
+					color: black
+
+					&:hover
+						border-bottom: 2px solid black
+
 		.socialLinks
 			position: absolute
 			right: 0
@@ -171,3 +186,9 @@
 				i
 					text-align: center
 					width: 20px
+
+			a.onScroll
+				color: black
+
+				&:hover
+					color: $gold

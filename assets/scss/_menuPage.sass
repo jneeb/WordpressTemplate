@@ -26,10 +26,12 @@
 
 .menuLayout
 	padding: 50px 20px
+	height: 500px
 
 	#breakfastMenu, #lunchMenu, #dinnerMenu
-		display: none
+		display: flex
 		width: 100%
+		position: absolute
 
 		.menuSection
 			padding: 0 10px
@@ -79,26 +81,32 @@
 .menuItem.highlight
 	border: 2px solid #262626
 
-#breakfastMenu.active
-	display: flex
-	justify-content: center
-	align-items: center
-	flex-direction: column
+#lunchMenu.noShow
+	opacity: 0
 
+#dinnerMenu.noShow
+	opacity: 0
 
-#lunchMenu.active
-	display: flex
-	justify-content: center
-	align-items: center
-	flex-direction: column
-	filter: opacity(100)
-
-#dinnerMenu.active
-	display: flex
-	justify-content: center
-	align-items: center
-	filter: opacity(100)
-	flex-direction: column
+// #breakfastMenu.active
+	// display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	flex-direction: column
+// //
+//
+// #lunchMenu.active
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	flex-direction: column
+// 	filter: opacity(100)
+//
+// #dinnerMenu.active
+// 	display: flex
+// 	justify-content: center
+// 	align-items: center
+// 	filter: opacity(100)
+// 	flex-direction: column
 
 h3.active
 	color: $gold

@@ -49,9 +49,7 @@ h6 {
   display: none; }
 
 #desktopNav.onScroll {
-  background: black;
-  -webkit-filter: invert(100);
-          filter: invert(100); }
+  background: white; }
 
 .mobileNav {
   font-family: "Montserrat", sans-serif;
@@ -168,6 +166,8 @@ h6 {
     display: none; }
   #desktopNav ul .activeMenu a {
     border-bottom: 2px solid white; }
+  #desktopNav ul .activeMenu a.onScroll {
+    border-bottom: 2px solid black; }
   #desktopNav {
     font-family: "Montserrat", sans-serif;
     position: fixed;
@@ -184,6 +184,10 @@ h6 {
       transition: all 0.3s ease-in-out;
       padding-left: 20px; }
       #desktopNav .logo:hover {
+        color: #dfa671; }
+    #desktopNav .logo.onScroll {
+      color: black; }
+      #desktopNav .logo.onScroll:hover {
         color: #dfa671; }
     #desktopNav ul {
       position: absolute;
@@ -203,6 +207,10 @@ h6 {
           font-size: 13px; }
           #desktopNav ul li a:hover {
             border-bottom: 2px solid white; }
+        #desktopNav ul li a.onScroll {
+          color: black; }
+          #desktopNav ul li a.onScroll:hover {
+            border-bottom: 2px solid black; }
     #desktopNav .socialLinks {
       position: absolute;
       right: 0;
@@ -219,7 +227,11 @@ h6 {
           color: #dfa671; }
         #desktopNav .socialLinks a i {
           text-align: center;
-          width: 20px; } }
+          width: 20px; }
+      #desktopNav .socialLinks a.onScroll {
+        color: black; }
+        #desktopNav .socialLinks a.onScroll:hover {
+          color: #dfa671; } }
 
 #homeHero {
   height: 100vh;
@@ -470,10 +482,14 @@ h6 {
         border-bottom: 2px solid #dfa671; }
 
 .menuLayout {
-  padding: 50px 20px; }
+  padding: 50px 20px;
+  height: 500px; }
   .menuLayout #breakfastMenu, .menuLayout #lunchMenu, .menuLayout #dinnerMenu {
-    display: none;
-    width: 100%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute; }
     .menuLayout #breakfastMenu .menuSection, .menuLayout #lunchMenu .menuSection, .menuLayout #dinnerMenu .menuSection {
       padding: 0 10px;
       max-width: 550px;
@@ -524,54 +540,11 @@ h6 {
 .menuItem.highlight {
   border: 2px solid #262626; }
 
-#breakfastMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+#lunchMenu.noShow {
+  opacity: 0; }
 
-#lunchMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-filter: opacity(100);
-          filter: opacity(100); }
-
-#dinnerMenu.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-filter: opacity(100);
-          filter: opacity(100);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+#dinnerMenu.noShow {
+  opacity: 0; }
 
 h3.active {
   color: #dfa671;
