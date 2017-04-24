@@ -1,20 +1,20 @@
-// $(document).ready(function () {
-// 	$(".menuSelect").click(function () {
-// 		$(".menuSelect").removeClass("active");
-// 		$(this).addClass("active");
-// 	});
-// });
-//
-// $(document).ready(function () {
-// 	$(".lunch").click(function () {
-// 		$(".menuFade").fadeOut("slow");
-// 		$(".lunchMenu").addClass("active");
-// 	});
-// });
-
 $(document).ready(function () {
 	$("#lunch").click(function () {
-		$("#breakfastMenu").fadeTo(800, 0);
-		$("#lunchMenu").delay(400).fadeTo(800, 1);
+		$(".menu").fadeTo(800, 0);
+		$("#lunchMenu").fadeTo(800, 1);
+		$(".active").removeClass("active");
+		$("#lunch").addClass("active");
+	});
+	$("#breakfast").click(function () {
+		$(".menu").fadeTo(800, 0);
+		$("#breakfastMenu").fadeTo(800, 1);
+		$(".active").removeClass("active");
+		$("#breakfast").addClass("active");
+	});
+	$("#dinner").click(function () {
+		$(".menu").fadeTo(800, 0);
+		$("#dinnerMenu").fadeTo(800, 1);
+		$(".active").removeClass("active");
+		$("#dinner").addClass("active");
 	});
 });
