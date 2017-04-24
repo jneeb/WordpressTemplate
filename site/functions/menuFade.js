@@ -14,7 +14,7 @@
 
 $(document).ready(function () {
 	$("#lunch").click(function () {
-		$("#breakfastMenu").fadeOut(800);
-		$("#lunchMenu").fadeIn(800);
+		$("#breakfastMenu").fadeTo(800, 0);
+		$("#lunchMenu").delay(400).fadeTo(800, 1);
 	});
 });
